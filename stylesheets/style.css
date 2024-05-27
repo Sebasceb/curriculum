@@ -9,6 +9,15 @@ h1 {
 h2 {
     font-family: 'Halant', serif;
 }
+body{
+    display: flex; 
+    flex-direction: row;
+    row-gap: 0.5rem; 
+    column-gap: 0.5rem; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
 
 .section{
     background-color: #fef6e4;
@@ -26,6 +35,9 @@ h2 {
     rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, 
     rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+    
+
+    
 }
 
 #informacion-personal > h2, #educacion  > h2, #experiencia > h2, #habilidades > h2, #contacto > h2{
@@ -43,4 +55,16 @@ input[type="submit"] {
     padding: 5px 10px; /* Ajusta el espacio interno si es necesario */
     border-radius: 5px; /* Agrega esquinas redondeadas si lo deseas */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+header,nav,#experiencia{
+    flex-basis: 100%;
+}
+#informacion-personal, #educacion{
+    flex-basis: 45%;
+}
+#habilidades,#contacto,#imagen{
+    flex-basis: 20%;
+}
+#video,#mapa{
+    flex-basis: 45%;
 }
